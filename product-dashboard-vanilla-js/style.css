@@ -1,0 +1,39 @@
+#product-container { /* adds css for product container */
+    display: grid;  
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr)); 
+    gap: 15px; 
+    padding: 20px;
+    max-width: 1200px; 
+    margin: 0 auto;
+    position: center;
+}
+
+.product-card { /* adds css for product card */
+    background-color: #000435;
+    border-radius: 8px;
+    margin: 15px;
+    padding: 20px;
+    width: 200px;
+    text-align: center;
+    transition: transform 0.3s;
+}
+
+.product-name { /* adds css for product name within product card */
+    font-size: 1.25rem;
+    font-weight: bold;
+    color: #FFFFFF;
+    margin-bottom: 10px;
+  }
+
+  .product-price { /* adds css for product price within product card */
+    font-size: 1.1rem;
+    color: #FFFFFF;
+    margin-bottom: 15px;
+  }
+  
+  .product-image { /* adds css for product image within product card */
+    max-width: 100%;
+    max-height: 150px;
+    height: auto;
+    border-radius: 8px;
+  }
