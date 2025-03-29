@@ -43,12 +43,6 @@ function displayProducts(products) {  // create the helper function
     });
 }
 
-function handleError(error) {  // error message function
-    const errorMessage = document.getElementById('error-message'); // gets the error message
-    errorMessage.textContent = `There was an error: ${error.message}`;  // logs error plus the message
-}
-
-
 // Task 4: Display Products //
 
 function displayProducts(products) {  // function to display products
@@ -79,3 +73,10 @@ function displayProducts(products) {  // function to display products
 
 fetchProductsThen(); // calls the function
 fetchProductsAsync(); // calls the function
+
+// Task 5: Reusable Error Handler //
+
+function handleError(error) {  // error message function
+    const errorMessage = document.getElementById('error-message'); // gets the error message
+    errorMessage.textContent = `An error occurred: ${error.message}`;  // logs error plus the message
+}
