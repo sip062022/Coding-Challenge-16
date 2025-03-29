@@ -71,12 +71,14 @@ function displayProducts(products) {  // function to display products
     })
 }
 
-fetchProductsThen(); // calls the function
-fetchProductsAsync(); // calls the function
-
 // Task 5: Reusable Error Handler //
 
 function handleError(error) {  // error message function
     const errorMessage = document.getElementById('error-message'); // gets the error message
     errorMessage.textContent = `An error occurred: ${error.message}`;  // logs error plus the message
 }
+
+// Task 6: Call Your Fetch Functions //
+
+fetchProductsThen(); // calls the function
+fetchProductsAsync(); // calls the function
